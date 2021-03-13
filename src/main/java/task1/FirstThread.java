@@ -1,6 +1,6 @@
 package task1;
 
-public class FirstThread  extends Thread {
+public class FirstThread extends Thread {
 
     int currentSec;
 

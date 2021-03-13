@@ -1,6 +1,7 @@
 import task1.FirstThread;
 import task1.SecondThread;
 
+
 public class Main {
     /*
      *  #1
@@ -24,14 +25,15 @@ public class Main {
      *
      * */
 
-    public static void main(String args[])  {
+    public static void main(String args[]) {
+
 
         // ex.1
         FirstThread firstThread = new FirstThread();
         SecondThread secondThread = new SecondThread(firstThread);
 
-       firstThread.start();
-       secondThread.start();
+        firstThread.start();
+        secondThread.start();
 
 
     }
