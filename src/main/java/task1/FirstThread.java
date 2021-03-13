@@ -24,11 +24,13 @@ public class FirstThread extends Thread {
             }
             System.out.println(currentThread().getName() + " second:" + currentSec);
 
-            if (currentSec == 15) {
+            // если здесь поставить 15 то второй поток №2 завершится на 2 секунды позже первого №1
+
+            if (currentSec == 16) {
                 break;
             }
         }
-        System.out.println("finish 1");
+        System.out.println("Finish - " + Thread.currentThread().getName());
     }
 }
 

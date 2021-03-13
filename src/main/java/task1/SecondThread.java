@@ -13,10 +13,9 @@ public class SecondThread extends Thread {
     public void run() {
 
         while (firstThread.isAlive()) {
+
             try {
-
                 currentSec = firstThread.getCurrentSec();
-
                 if (currentSec % 5 == 0 && currentSec != 0) {
                     System.out.println(currentThread().getName() + " Прошло 5 секунд");
                     sleep(2000);
@@ -25,7 +24,7 @@ public class SecondThread extends Thread {
                 e.printStackTrace();
             }
         }
-        System.out.println("finish 2");
+        System.out.println("Finish - " + Thread.currentThread().getName());
     }
 }
 
