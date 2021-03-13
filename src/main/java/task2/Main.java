@@ -1,15 +1,9 @@
-import task1.FirstThread;
-import task1.SecondThread;
+package task2;
 
 
 public class Main {
+
     /*
-     *  #1
-     * Напишите программу, которая каждую секунду отображает на экране данные о времени,
-     * прошедшем от начала сессии (запуска программы).Другой ее поток выводит каждые 5 секунд сообщение
-     * "Прошло 5 секунд".Предусмотрите возможность ежесекундного оповещения потока,
-     * воспроизводящего сообщение, потоком, отсчитывающим время.
-     *
      *  #2
      * Напишите программу, которая выводит в консоль строку, состоящую из чисел от 1 до n, но с заменой некоторых значений:
      * если число делится на 3 - вывести "fizz"
@@ -23,22 +17,11 @@ public class Main {
      * Поток C вызывает fizzbuzz() чтобы проверить делимость на 3 и 5 и вывести fizzbuzz.
      * Поток D вызывает number() чтобы вывести число.
      *
+     *
      * */
 
-    public static void main(String args[]) {
 
-
-        // ex.1
-        FirstThread firstThread = new FirstThread();
-        SecondThread secondThread = new SecondThread(firstThread);
-
-        firstThread.start();
-        secondThread.start();
-
+    public static void main(String[] args) {
 
     }
 }
-
-
-
-
